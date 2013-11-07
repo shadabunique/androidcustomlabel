@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:label="http://schemas.android.com/apk/res/com.shadab.custom.label"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/static_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.shadab.custom.label.view.CustomLabelView
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            label:labelBackgroundColor="@color/light_green"
+            label:labelIcon="@drawable/pic"
+            label:labelText="Item 1"
+            label:labelTextColor="@color/pink" />
+
+        <com.shadab.custom.label.view.CustomLabelView
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view1"
+            android:layout_marginLeft="10dp"
+            label:labelBackgroundColor="@color/transparent"
+            label:labelBackground="@drawable/border"
+            label:labelIcon="@drawable/pic"
+            label:labelText="Item 2"
+            label:labelTextColor="@color/dark_green" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dynamic_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Add Label" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/btn_add" >
+
+            <LinearLayout
+                android:id="@+id/base_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomLabelView">
+        <attr name="labelText" format="string" localization="suggested" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelBackgroundColor" format="color" />
+        <attr name="labelIcon" format="reference" />
+        <attr name="labelBackground" format="reference" />
+    </declare-styleable>
+</resources>
