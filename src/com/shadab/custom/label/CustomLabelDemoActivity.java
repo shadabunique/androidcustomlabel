@@ -47,6 +47,7 @@ public class CustomLabelDemoActivity extends Activity implements OnClickListener
 
 		nameBox = new EditText(this);
 		nameBox.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT));
+		nameBox.setHint("Enter text to add label");
 		baseLayout.addView(nameBox);
 		
 		nameBox.addTextChangedListener(new TextWatcher() {
