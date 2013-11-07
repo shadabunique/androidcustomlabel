@@ -11,3 +11,8 @@ which contains the selected text, (optionally image) and  cross icon to remove t
 Android custom label provides you the custom view which can be directly used in your applications.
 It can be modified according to your needs. 
 Also one can declare the label in layout files.
+
+Screenshot
+
+
+![Alt text](/custom_label_screenshot.png "Sample snapshot")
